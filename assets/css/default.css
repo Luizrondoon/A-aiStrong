@@ -64,6 +64,15 @@ html, body {
     background-position: center center;
     background-size: cover;
 }
+.main .primary-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/DSC7415.jpg");
+    background-position: center center;
+    background-size: cover;
+    opacity: 0.4;
+}
 .explanation {
     color: #fff;
 }
@@ -113,6 +122,75 @@ html, body {
     padding: 15px 0 15px 0;
     font-size: 1.5em;
 }
+.invite-form .btn-padrao {
+    background-image: linear-gradient(to bottom,#8B5AA1 0,#7e16ad 100%);
+    border-color: #611384;
+    color: #fff;
+    text-shadow: rgba(0,0,0,.3) 1px 1px 1px;
+}
+.invite-form .btn-padrao:hover, .invite-form .btn-padrao:focus  {
+    background-image: linear-gradient(to bottom,#521070,#611384);
+    background-position: 0 -5px;
+    color: #fff;
+    font-size: 1.6em;
+}
 .invite-form div.col-xs-6, .invite-form div.col-xs-12 {
     padding: 0 5px 0 5px !important;
 } 
+/* Abour Us */
+.about .primary-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/DSC7415.jpg");
+    background-position: center center;
+    background-size: cover;
+    z-index: -1;
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    filter: blur(2px);
+    z-index: 1;
+    opacity: 0.8;
+}
+.about .container-fluid, .about .row, .about .thumb-box, .about .text-box {
+    height: 100%;
+}
+.about .thumb-box {
+    display: table;
+    padding: 0;
+    background-color: #000;
+}
+.about .text-box {
+    display: table;
+    padding: 15px;
+}
+.about .thumb-box .content, .about .text-box .content {
+    display: table-cell;
+    vertical-align: middle;
+}
+.about h1 {
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+    text-align: left;
+    color: #fff;
+    text-shadow: rgba(0,0,0,.3) 1px 3px 1px;
+    padding-left: 25%;
+    z-index: 22;
+}
+.about .text-box {
+    text-align: center;
+}
+.text-box .content i {
+    font-size: 60px;
+    margin-bottom: 25px;
+    color: #3a3a3a;
+}
+.text-box .content p {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: justify;
+}
