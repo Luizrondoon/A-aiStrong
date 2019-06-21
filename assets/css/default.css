@@ -13,7 +13,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License. 
 ***********************************************************************/
-
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,800|Varela+Round&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -30,14 +30,32 @@ html, body {
     height: 100%;
     display: table;
 }
+.hero .col-md-7 {
+    position: relative;
+    height: 100%;
+    display: table;
+}
 .align-middle {
     display: table-cell;
     vertical-align: middle;
 }
 /* Especialização da NavBar */
 .navbar-default {
-    padding: 15px 0 15px 0;
     background-image: linear-gradient(to bottom,#fff 0,#f8f8f8 100%);
+    padding: 10px 0 10px 0;
+}
+.navbar-brand {
+    padding: 0 !important;
+}
+.navbar-brand img {
+    max-width: 90px;
+    height: auto;
+    margin-top: 2px;
+}
+.navbar-default .navbar-nav li:hover {
+    background-color: #8BCCCD;
+    border-radius: 8px;
+    color: white !important;
 }
 /* Main Screen */
 .main {
@@ -46,17 +64,55 @@ html, body {
     background-position: center center;
     background-size: cover;
 }
-.invite-box {
-    position: relative;
-    height: 550px;
-    padding: 0;
+.explanation {
+    color: #fff;
+}
+.explanation h1 {
+    text-shadow: rgba(0,0,0,.3) 1px 1px 1px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 45px;
+}
+.explanation p {
+    text-shadow: rgba(0,0,0,.3) 1px 1px 1px;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 26px;
+    padding-right: 70px;
+    letter-spacing: -1px;
 }
 .invite-form {
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
-    height: 550px;
+    position: absolute;
+    margin-top: 20%;
     background-color: white;
     border-radius: 5px;
     box-shadow: rgba(0,0,0,.3) 0px 5px 6px;
+    padding: 10px 20px 10px 20px;
 }
+.invite-form .video-marketing {
+    width: 100%;
+    height: 210px;
+    border-radius: 10px !important;
+}
+.invite-form h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: -2px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: #595959;
+}
+.invite-form input {
+    margin-bottom: 8px;
+    height: 40px;
+}
+.invite-form button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-top: 25px;
+    padding: 15px 0 15px 0;
+    font-size: 1.5em;
+}
+.invite-form div.col-xs-6, .invite-form div.col-xs-12 {
+    padding: 0 5px 0 5px !important;
+} 
