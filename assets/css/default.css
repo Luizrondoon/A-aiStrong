@@ -163,6 +163,8 @@ html, body {
 .about .text-box {
     display: table;
     padding: 15px;
+    background-color: #f9f9f9;
+    background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23e5e5e5' fill-opacity='0.36'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 .about .thumb-box .content, .about .text-box .content {
     display: table-cell;
@@ -189,8 +191,71 @@ html, body {
 }
 .text-box .content p {
     font-family: 'Varela Round', sans-serif;
-    font-size: 25px;
-    padding-left: 20px;
-    padding-right: 20px;
+    font-size: 16px;
+    padding-left: 80px;
+    padding-right: 80px;
     text-align: justify;
+    line-height: 2;
+}
+/* Product Options */
+.product .header {
+    padding: 15px 15px 25px 15px;
+    font-family: 'Varela Round', sans-serif;
+    text-align: center;
+}
+.product h2:first-child {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+}
+.product .header p{
+    font-size: 16px;
+    line-height: 2;
+}
+.product .item {
+    padding: 40px 25px 25px 25px;
+    min-height: 300px;
+    background-color: #611384;
+    text-align: center;
+    color: white;
+    line-height: 2;
+    background-image: linear-gradient(to bottom right,#7e16ad,#611384);
+}
+.product .item i {
+    font-size: 45px;
+}
+.product .item h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    padding: 10px 0 5px 0;
+}
+.product .itens {
+    font-family: 'Varela Round', sans-serif;
+    color: #fff;
+    text-shadow: rgba(0,0,0,.3) 2px 2px 1px; 
+}
+.product .itens .first:hover {
+    background-image: linear-gradient(to bottom,#273c75,#192a56);
+    background-position: 0 -20px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.product .itens .second:hover {
+    background-image: linear-gradient(to bottom,#44bd32,#599128);
+    background-position: 0 -20px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.3s ease-in-out; 
+}
+.product .itens .third:hover {
+    background-image: linear-gradient(to bottom,#f1c40f,#f39c12);
+    background-position: 0 -20px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.product .itens .fourth:hover {
+    background-image: linear-gradient(to bottom, #e81240, #c10f35);
+    background-position: 0 -20px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
