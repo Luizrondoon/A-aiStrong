@@ -198,8 +198,10 @@ html, body {
     line-height: 2;
 }
 /* Product Options */
+.product {
+    padding: 80px 0 80px 0;
+}
 .product .header {
-    padding: 15px 15px 25px 15px;
     font-family: 'Varela Round', sans-serif;
     text-align: center;
 }
@@ -207,18 +209,24 @@ html, body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 35px;
+    margin-top: 0;
+    margin-bottom: 20px;
 }
 .product .header p{
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
     font-size: 16px;
-    line-height: 2;
 }
 .product .item {
     padding: 40px 25px 25px 25px;
     min-height: 300px;
+    max-height: 300px;
+    overflow: hidden;
     background-color: #611384;
     text-align: center;
     color: white;
-    line-height: 2;
     background-image: linear-gradient(to bottom right,#7e16ad,#611384);
 }
 .product .item i {
@@ -258,4 +266,66 @@ html, body {
     background-position: 0 -20px;
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.3s ease-in-out;
+}
+/* Estruct Details */
+.estruct {
+    background-image: linear-gradient(to bottom, #81108c, #340947);
+    font-family: 'Varela Round', sans-serif;
+    color: white;
+}
+.estruct .container {
+    height: 100%;
+    display: table;
+}
+.estruct .container .content{
+    display: table-cell;
+    vertical-align: middle;
+}
+.estruct .primary-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/fachada_container.jpg");
+    background-position: top center;
+    background-size: cover;
+    z-index: 0;
+    opacity: 0.2;
+}
+.estruct .header h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 35px;
+    padding: 70px 0 20px 0;
+    text-align: center;
+    text-shadow: rgba(0,0,0,.3) 1px 3px 1px;
+}
+.estruct .header p {
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    font-size: 16px;
+    text-align: center;
+    text-shadow: rgba(0,0,0,.3) 1px 3px 1px;
+}
+.estruct .itens {
+    padding-top: 30px;
+}
+.estruct .item {
+    text-align: center;
+}
+.estruct .item i {
+    background-color: white;
+    color: #521070;
+    font-size: 35px;
+    width: 80px;
+    height: 80px;
+    padding: 20px;
+    border-radius: 50%;
+}
+.estruct .item h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    padding: 10px 0 5px 0;
 }
